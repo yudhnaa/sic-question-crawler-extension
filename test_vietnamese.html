@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Test SIC Extension với Tiếng Việt</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 20px;
+				line-height: 1.6;
+			}
+			.question-item {
+				border: 1px solid #ccc;
+				margin: 20px 0;
+				padding: 15px;
+				border-radius: 5px;
+			}
+			.question-num {
+				font-weight: bold;
+				color: #2c5aa0;
+			}
+			.question-title {
+				margin: 10px 0;
+				font-size: 16px;
+			}
+			.checkbox {
+				margin: 5px 0;
+				display: flex;
+				align-items: center;
+			}
+			.checkbox span {
+				margin-left: 10px;
+			}
+			.fa-check {
+				color: #08c767;
+				margin-right: 5px;
+			}
+			.fa-times {
+				color: #bf3b26;
+				margin-right: 5px;
+			}
+			.test-info {
+				background: #f0f8ff;
+				padding: 15px;
+				border-radius: 5px;
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="test-info">
+			<h2>🧪 Test Extension SIC với Tiếng Việt</h2>
+			<p>
+				Trang này mô phỏng cấu trúc câu hỏi SIC để test extension với các ký tự
+				tiếng Việt đặc biệt.
+			</p>
+			<p>
+				<strong>Hướng dẫn:</strong> Mở extension và thử các tính năng crawl và
+				export PDF.
+			</p>
+		</div>
+
+		<div class="question-item">
+			<div class="question-num">Câu 1 (2 điểm)</div>
+			<div class="question-title">
+				Đâu là phương pháp tốt nhất để xử lý các ký tự đặc biệt trong tiếng Việt
+				như áàảãạâấầẩẫậăắằẳẵặ?
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>A. Sử dụng encoding UTF-8 đơn giản</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-check" style="color: #08c767"></i>
+				<span>B. Normalize text với Unicode NFC và xử lý font phù hợp</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>C. Chuyển đổi tất cả ký tự có dấu thành không dấu</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>D. Bỏ qua các ký tự đặc biệt</span>
+			</div>
+		</div>
+
+		<div class="question-item">
+			<div class="question-num">Câu 2 (3 điểm)</div>
+			<div class="question-title">
+				Khi xuất PDF với jsPDF, font nào hỗ trợ tốt nhất cho tiếng Việt:
+				éèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữự?
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>A. Helvetica (font mặc định)</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>B. Arial thông thường</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-check" style="color: #08c767"></i>
+				<span>C. Times với Unicode support hoặc custom font như Roboto</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>D. Bất kỳ font nào cũng được</span>
+			</div>
+		</div>
+
+		<div class="question-item">
+			<div class="question-num">Câu 3 (2 điểm)</div>
+			<div class="question-title">
+				Test với câu hỏi dài: Làm thế nào để đảm bảo văn bản tiếng Việt được
+				xuống dòng đúng cách trong PDF khi có nhiều ký tự đặc biệt như ýỳỷỹỵđĐ
+				và các từ dài như "thông tin học tập trực tuyến"?
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>A. Chỉ dùng splitTextToSize mặc định</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-check" style="color: #08c767"></i>
+				<span
+					>B. Kết hợp splitTextToSize với manual wrapping và xử lý từ tiếng
+					Việt</span
+				>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>C. Cắt text theo số ký tự cố định</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>D. Không cần xử lý đặc biệt</span>
+			</div>
+		</div>
+
+		<div class="question-item">
+			<div class="question-num">Câu 4 (1 điểm)</div>
+			<div class="question-title">
+				Ký tự nào sau đây thường gây vấn đề trong PDF export?
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>A. Chỉ có ă và â</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>B. Các số từ 0-9</span>
+			</div>
+			<div class="checkbox">
+				<i class="fa-check" style="color: #08c767"></i>
+				<span
+					>C. Zero-width characters, non-breaking spaces và combining
+					marks</span
+				>
+			</div>
+			<div class="checkbox">
+				<i class="fa-times" style="color: #bf3b26"></i>
+				<span>D. Chỉ có chữ cái Latin</span>
+			</div>
+		</div>
+
+		<script>
+			console.log("Test page loaded with Vietnamese characters");
+			console.log(
+				"Các ký tự test: áàảãạâấầẩẫậăắằẳẵặéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵđĐ"
+			);
+		</script>
+	</body>
+</html>

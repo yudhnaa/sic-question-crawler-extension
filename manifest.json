@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "SIC Question Crawler",
+  "version": "1.0",
+  "description": "Crawl questions and answers from SIC exercise website and export to PDF",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SIC Question Crawler"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["jspdf.umd.min.js", "jspdf-loader.js", "content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*.js", "*.css", "jspdf.umd.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
